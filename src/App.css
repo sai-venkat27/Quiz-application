@@ -1,38 +1,69 @@
-.App {
+/* Shared app styles used by App and components */
+
+.app-container {
   text-align: center;
+  margin-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quiz-container {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.question-card {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: large;
+  background-color: aliceblue;
+  color: black;
+  margin-top: 10px;
+  width: 500px;
+  height:auto;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  margin: auto;
+  box-shadow: 0 0 20px 5px rgba(94, 97, 94, 0.6);
 
-.App-link {
-  color: #61dafb;
+  margin-bottom: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  text-align: center;
+  margin: 10px;
+  width: auto;
+}
+.option-button {
+  border: 2px solid brown;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black;
+  font-weight: 200;
+  background-color: aliceblue;
+}
+button{
+  cursor:pointer;
+  margin:auto;
+  height:50px;
+  width:400px;
+  border-radius: 10px;
+  border: 2px solid black
+}
+button:hover{
+  color: #ffff;
+  background-color: dodgerblue;
+  font-weight: bold;
+}
+.prev{
+  color: #ffff;
+  background-color: dodgerblue;
+  font-weight: bold;
+  margin:20px;
+  width:100px;
+  border: none;
+  border-radius: 15px;
+}
+.prev:hover{
+  animation-delay: 1ms;
+  transform: translateX(-10px);
 }
